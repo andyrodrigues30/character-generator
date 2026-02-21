@@ -38,7 +38,7 @@ h2 {
   font-size: 30px;
 }
 
-.genButton {
+.gen-button {
   font-size: 20px;
   position: relative;
   color: white;
@@ -53,13 +53,14 @@ h2 {
   border: #ffd800 solid 1px;
   transition: 0.3s ease-in-out;
   transition-property: background, border-color;
+  text-transform: uppercase;
 }
 
 .sentence {
   padding: 30px;
 }
 
-.genButton:hover {
+.gen-button:hover {
   background: #004445;
 }
 
