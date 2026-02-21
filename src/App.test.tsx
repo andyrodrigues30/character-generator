@@ -9,12 +9,13 @@ describe("App integration", () => {
 
     await userEvent.click(button);
 
-    // There should now be at least one sentence
+    // there should now be at least one sentence
     const headings = screen.getAllByRole("heading", { level: 2 });
     expect(headings.length).toBeGreaterThan(0);
 
     const text = headings[headings.length - 1].textContent || "";
-    expect(text.length).toBeGreaterThan(0); // ensure sentence is non-empty
+    // ensure sentence is non-empty
+    expect(text.length).toBeGreaterThan(0);
   });
 
   it("adds another sentence on second click", async () => {

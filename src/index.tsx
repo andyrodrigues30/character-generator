@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 
-// Get root element safely with TypeScript
+// get root element safely with TypeScript
 const rootElement = document.getElementById("root");
 
 if (!rootElement) {

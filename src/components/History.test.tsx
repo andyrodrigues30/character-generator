@@ -13,14 +13,14 @@ describe("History component", () => {
 
     const text = container.textContent || "";
 
-    // First entry should not appear
+    // first entry should not appear
     expect(text).not.toContain("brave");
     expect(text).toContain("evil");
     expect(text).toContain("wizard");
     expect(text).toContain("funny");
     expect(text).toContain("clown");
 
-    // Check highlighted spans
+    // check highlighted spans
     const spans = container.querySelectorAll("span#imp");
     expect(spans.length).toBe(6); // 3 words each for last two entries
   });

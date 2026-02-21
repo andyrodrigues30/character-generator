@@ -13,7 +13,7 @@ describe("Sentence component", () => {
   it("renders all parts of the sentence correctly", () => {
     const { container } = render(<Sentence entry={mockEntry} />);
 
-    // Use container.textContent to match all text even if split by spans
+    // use container.textContent to match all text even if split by spans
     const text = container.textContent || "";
 
     expect(text).toContain("brave");
@@ -22,7 +22,7 @@ describe("Sentence component", () => {
     expect(text).toContain("holding");
     expect(text).toContain("sword");
 
-    // Check that the spans for highlighted words exist
+    // check that the spans for highlighted words exist
     const spans = container.querySelectorAll("span#imp");
     expect(spans).toHaveLength(3);
     expect(spans[0].textContent).toBe("knight");
