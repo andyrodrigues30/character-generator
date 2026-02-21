@@ -1,16 +1,48 @@
 # Character Generator
 
-## What is this project about?
-This project was created to explore [react.js](https://github.com/facebook/create-react-app). It allows users to randomly generate uniques character descriptions.
+> A React application that generates unique random character descriptions.
 
-## How to use it
-In the project directory, you can run:
+Each generated sentence combines personality, character, clothing, and an action with an item.
 
-`yarn start`
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+![Jest](https://img.shields.io/badge/-jest-%23C21325?style=for-the-badge&logo=jest&logoColor=white)
+![Testing-Library](https://img.shields.io/badge/-TestingLibrary-%23E33332?style=for-the-badge&logo=testing-library&logoColor=white)
 
-This runs the app in the development mode.
+## Features
+- Generate random character sentences like:  
+  `"Brave knight wearing armor holding sword."`
+- Highlights key words (character, clothing, item) with `<span>` for styling.
+- Maintains history of previous sentences, showing the last two generated.
+- Fully TypeScript typed.
+- Unit and integration tests with React Testing Library.
 
-To view it in the browser, go to [http://localhost:3000/](http://localhost:3000/) 
+## Getting Started
+1. Clone the repository
+```bash
+git clone https://github.com/andyrodrigues30/character-generator.git
 
-The page will reload if you make edits.
-You will also see any lint errors in the console.
+cd character-generator
+```
+
+2. Install dependencies
+```
+npm install
+```
+
+3. Run the development server
+```
+npm start
+```
+App will run on `http://localhost:3000`
+
+4. Run tests (tests are fully React 18 + RTL + jest-dom compatible)
+```
+npm test
+```
+
+5. Generate test coverage
+npm run coverage
+
+## License
+This project is open source under the **MIT License**.
